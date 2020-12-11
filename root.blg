@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: root.aux
+The style file: unsrt.bst
+Database file #1: references.bib
+You're missing a field part---line 14 of file references.bib
+ :   number = 
+ :            ,
+I'm skipping whatever remains of this entry
+Name 1 in "Lofstead, Gerald Fredrick, and Jimenez, Ivo and Maltzahn, Carlos and Moody, Adam and Mohror, Kathryn and Arpaci-Dusseau, Remzi" has a comma at the end for entry osti_1244917
+while executing---line 944 of file unsrt.bst
+Warning--empty journal in osti_1244917
+Warning--empty year in osti_1244917
+You've used 3 entries,
+            1791 wiz_defined-function locations,
+            457 strings with 3969 characters,
+and the built_in function-call counts, 458 in all, are:
+= -- 26
+> -- 32
+< -- 0
++ -- 12
+- -- 9
+* -- 27
+:= -- 84
+add.period$ -- 6
+call.type$ -- 3
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 22
+empty$ -- 45
+format.name$ -- 9
+if$ -- 92
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 1
+newline$ -- 15
+num.names$ -- 3
+pop$ -- 14
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 10
+stack$ -- 0
+substring$ -- 0
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 3
+width$ -- 4
+write$ -- 25
+(There were 2 error messages)

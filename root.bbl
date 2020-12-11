@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{pii:2014}
+Ricardo~Vardasca Carlos~Antunesa.
+\newblock {\em Performance of Jails versus Virtualization for Cloud Computing
+  Solutions}, 2014.
+
+\bibitem{CCC:2017}
+Jacopo~Soldani Claus~Pahl and Pooyan Jamshidi.
+\newblock {\em Cloud Container Technologies:a State-of-the-Art Revie}, May
+  2017.
+
+\bibitem{osti_1244917}
+Gerald~Fredrick Lofstead, Ivo Jimenez, Carlos Maltzahn, Adam Moody, Kathryn
+  Mohror, and Remzi Arpaci-Dusseau.
+\newblock The role of container technology in reproducible computer systems
+  research.
+
+\end{thebibliography}
