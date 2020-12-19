@@ -1,15 +1,40 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage{mathtools}
 \usepackage{amssymb}
+\usepackage{titling}
+\usepackage{lipsum}
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 \usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T1]{fontenc}
+
+\pretitle{\begin{center}\Huge\bfseries}
+\posttitle{\par\end{center}\vskip 0.5em}
+\preauthor{\begin{center}\Large\ttfamily}
+\postauthor{\end{center}}
+\predate{\par\large\centering}
+\postdate{\par}
+
+\pretitle{\begin{center}\Huge\bfseries}
+\posttitle{\par\end{center}\vskip 0.5em}
+\preauthor{\begin{center}\Large\ttfamily}
+\postauthor{\end{center}}
+\predate{\par\large\centering}
+\postdate{\par}
+
+\title{Choosing between Containerization or Virtualization}
+\author{Jonas Thorhauge Grønbek, Kristoffer Lock Tølbøll}
+\date{\today}
 
 \begin{document}
-	\section{Synopsis}
-	In this article we aim to describes a high-level overview of Containerization, with emphasis on Docker (which has been one the learning subjects in our curriculum). First we will analyze Containerization technologies from a historical perspective, with emphasis on the problems issues that the different technologies have solved. Along with the motivation for further improving upon these technologies, up until Docker. Which is arguably considered state of the art within Containerization tools in the modern day development-operations paradigm. 
+			
+	\maketitle
+	\thispagestyle{empty}
 	
-	We then compare Virtualization and Containerization from a high-level perspective, along with the best use cases for each technique. 
+	\begin{abstract}
+	Technologies like virtualization and containerization have had a major impact in software development. There seems to be some general confusion about the differences between the two and when to utilize one over the other - which could lead to inefficient or unmaintainable code-bases. We will throughout our article elaborate on the differences between the two and conclude the relevant considerations that should be taken into account before implementing either.
+	\end{abstract}
 	
 	\section{History and origin of Containerization}
 	Containerization has been around for a long time. Chroot first came out in 1979, and gave developers the ability to change the root directory of a process. This feature enables developers to encapsulate programs in a contained file system, which is isolated from the original file system. This idea was expanded upon, when Jails came out in 2000.
@@ -70,9 +95,9 @@
 	
 	
 	\section{Conclusion}
-	As elaborated on throughout the article, specific use-cases becomes clear whether to implement your software over Containerization or Virtualization. Each of the respective paradigms each provides specific circumstances to run software, and the conditions determines whether contained or virtual environments is appropriate. 
+	As elaborated on throughout the article, the technology and specific use-case indicates whether to implement your software over Containerization or Virtualization. Each of the respective paradigms each provides specific circumstances to run software, and the conditions determines whether contained or virtual environments is appropriate. 
 	
-	If your hosted processes requires hardware access, then a Virtual Environment would be the obvious choice. Other relevant considerations could include concerns in regard to interactions, management and deployment. Even though the popularity of Containerization is abundantly clear these days, and is the de facto for more general software implementations, it does not always provide the same utilities that Virtualization does.
+	If your hosted processes requires hardware access, then a Virtual Environment would be the obvious choice. Other relevant considerations could include concerns in regard to interactions, management and deployment. Containerization is the light-weight more performance oriented solution and specifically docker containers are the backbone for a lot of modern and current tools relevant to CI/CD and orchestration. If any of that is desired - then docker is the obvious choice. Should your software however require to function within it's own individual segregated OS, then Virtualization is probably to be chosen.
 	
 	\bibliographystyle{unsrt}	
 	\bibliography{references}
